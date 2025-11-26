@@ -23,10 +23,10 @@ export function Header({ cartCount, onOpenCart }) {
             </h1>
           </div>
           <div className="hidden md:block">
-            <h1 className="text-2xl font-bold text-brand-black leading-none">
+            <h1 className="text-3xl font-lobster text-brand-black leading-none tracking-wide">
               Olá, Atleta! 🏐
             </h1>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-gray-500 mt-1 font-sans">
               Bora repor as energias?
             </p>
           </div>

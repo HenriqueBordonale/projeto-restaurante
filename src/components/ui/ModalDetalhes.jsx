@@ -54,15 +54,15 @@ export function ModalDetalhes({ product, isOpen, onClose, onAddToCart }) {
         {/* Lado Direito: Infos */}
         <div className="flex-1 flex flex-col h-full overflow-hidden">
           <div className="flex-1 overflow-y-auto p-6 md:p-8">
-            <span className="text-xs font-bold text-brand-yellow uppercase tracking-wider bg-brand-black px-2 py-1 rounded">
+            <span className="text-xs font-montserrat font-bold text-brand-yellow uppercase tracking-wider bg-brand-black px-2 py-1 rounded">
               {product.category}
             </span>
 
-            <h2 className="text-2xl md:text-3xl font-bold text-brand-black mt-3 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-lobster text-brand-black mt-3 leading-none">
               {product.name}
             </h2>
 
-            <p className="text-gray-500 mt-3 text-sm leading-relaxed">
+            <p className="text-gray-500 mt-3 text-sm leading-relaxed font-sans">
               {product.description}
             </p>
 
@@ -103,7 +103,7 @@ export function ModalDetalhes({ product, isOpen, onClose, onAddToCart }) {
               {/* Total */}
               <div className="text-right">
                 <span className="text-xs text-gray-500 block">Total</span>
-                <span className="text-2xl font-bold text-brand-black">
+                <span className="text-3xl font-montserrat font-bold text-brand-black">
                   R$ {finalTotalPrice.toFixed(2).replace(".", ",")}
                 </span>
               </div>
@@ -111,7 +111,7 @@ export function ModalDetalhes({ product, isOpen, onClose, onAddToCart }) {
 
             <button
               onClick={handleConfirm}
-              className="w-full bg-brand-black text-white py-3 rounded-xl font-bold text-lg hover:bg-brand-yellow hover:text-brand-black transition-all active:scale-95 shadow-lg"
+              className="w-full ... font-montserrat font-bold uppercase tracking-wide ..."
             >
               Adicionar ao Pedido
             </button>

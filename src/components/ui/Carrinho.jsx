@@ -20,7 +20,9 @@ export function Carrinho({
     <div className="fixed inset-0 z-50 flex justify-end bg-black/50 backdrop-blur-sm animate-in fade-in duration-200">
       <div className="w-full max-w-md bg-white h-full shadow-2xl flex flex-col animate-in slide-in-from-right duration-300">
         <div className="p-5 border-b flex items-center justify-between bg-brand-black text-white">
-          <h2 className="text-xl font-bold">Seu Pedido</h2>
+          <h2 className="text-2xl font-lobster font-normal tracking-wide">
+            Seu Pedido
+          </h2>
           <button
             onClick={onClose}
             className="p-2 hover:bg-white/20 rounded-full transition-colors"
@@ -56,7 +58,7 @@ export function Carrinho({
                 </div>
 
                 <div className="flex-1">
-                  <h3 className="font-bold text-sm text-brand-black line-clamp-1">
+                  <h3 className="font-montserrat font-bold text-sm text-brand-black line-clamp-1">
                     {item.name}
                   </h3>
                   {item.observation && (
@@ -103,14 +105,14 @@ export function Carrinho({
         <div className="p-5 border-t bg-gray-50">
           <div className="flex justify-between items-center mb-4">
             <span className="text-gray-500">Total</span>
-            <span className="text-2xl font-bold text-brand-black">
+            <span className="text-3xl font-montserrat font-bold text-brand-black">
               R$ {total.toFixed(2).replace(".", ",")}
             </span>
           </div>
           <button
             onClick={onCheckout}
             disabled={cartItems.length === 0}
-            className="w-full bg-green-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-green-700 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-green-200"
+            className="w-full bg-green-600 text-white py-4 font-montserrat font-bold uppercase tracking-wider rounded-xl font-bold text-lg hover:bg-green-700 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-green-200"
           >
             Finalizar Pedido
           </button>

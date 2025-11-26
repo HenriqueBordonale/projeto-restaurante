@@ -2,11 +2,11 @@ import {
   Home,
   Flame,
   Beer,
-  Wine, // Para Drinks
-  GlassWater, // Para Sem Álcool
-  UtensilsCrossed, // Para Porções
-  Beef, // Para Espetos (Se não tiver 'Beef', use 'Utensils')
-  IceCream, // Para Sobremesas
+  Wine,
+  GlassWater,
+  UtensilsCrossed,
+  Beef,
+  IceCream,
 } from "lucide-react";
 
 export const categories = [
@@ -21,20 +21,12 @@ export const categories = [
 ];
 
 export const products = [
-  // --- DESTAQUES (Duplicatas estratégicas para aparecer na Home) ---
-  // A categoria 'destaques' é especial. Itens podem ter ela E sua categoria original.
-  // No seu código atual, estamos filtrando por string única, então vamos marcar como 'destaques'
-  // os itens que queremos na vitrine, mas o ideal é que eles apareçam na categoria original também.
-  // PARA SIMPLIFICAR SEU MVP: Vou colocar os itens principais com a categoria original,
-  // e no App.jsx nós decidimos quem aparece na Home.
-
-  // --- ESPETOS ---
   {
     id: 1,
     name: "Espeto de Carne",
     description: "Carne macia selecionada, assada na brasa no ponto ideal.",
     price: 12.0,
-    image: "/produtos/espeto-carne.jpg",
+    image: "/produtos/espeto-carne.png",
     category: "espetos",
   },
   {
@@ -42,7 +34,7 @@ export const products = [
     name: "Espeto de Queijo Coalho",
     description: "Queijo coalho tostado e crocante por fora.",
     price: 12.0,
-    image: "/produtos/espeto-queijo.jpg",
+    image: "/produtos/espeto-queijo.png",
     category: "espetos",
   },
   {
@@ -50,7 +42,7 @@ export const products = [
     name: "Kafta Tradicional",
     description: "Carne moída temperada com especiarias árabes.",
     price: 12.0,
-    image: "/produtos/espeto-kafta.jpg",
+    image: "/produtos/espeto-kafta.png",
     category: "espetos",
   },
   {
@@ -58,7 +50,7 @@ export const products = [
     name: "Kafta com Queijo",
     description: "Nossa deliciosa kafta recheada com queijo derretido.",
     price: 12.0,
-    image: "/produtos/kafta-queijo.jpg",
+    image: "/produtos/kafta-queijo.png",
     category: "espetos",
   },
   {
@@ -66,17 +58,16 @@ export const products = [
     name: "Medalhão de Mandioca",
     description: "Mandioca macia envolta em bacon com toque de gorgonzola.",
     price: 12.0,
-    image: "/produtos/medalhao-mandioca.jpg",
+    image: "/produtos/medalhao-mandioca.png",
     category: "espetos",
   },
 
-  // --- PORÇÕES E LANCHES ---
   {
     id: 6,
     name: "Batata Frita Tradicional",
     description: "Porção generosa, sequinha e crocante.",
     price: 26.0,
-    image: "/produtos/batata-frita.jpg",
+    image: "/produtos/batata-frita.png",
     category: "porcoes",
   },
   {
@@ -85,7 +76,7 @@ export const products = [
     description:
       "A queridinha da casa! Coberta com muito cheddar e cubos de bacon.",
     price: 36.0,
-    image: "/produtos/batata-cheddar.jpg",
+    image: "/produtos/batata-cheddar.png",
     category: "porcoes",
   },
   {
@@ -93,7 +84,7 @@ export const products = [
     name: "Isca de Frango",
     description: "Peito de frango empanado e frito. Ótimo petisco.",
     price: 34.0,
-    image: "/produtos/isca-frango.jpg",
+    image: "/produtos/isca-frango.png",
     category: "porcoes",
   },
   {
@@ -101,7 +92,7 @@ export const products = [
     name: "Anéis de Cebola",
     description: "Onion rings empanadas e douradas.",
     price: 32.0,
-    image: "/produtos/cebola.jpg",
+    image: "/produtos/cebola.png",
     category: "porcoes",
   },
   {
@@ -110,7 +101,7 @@ export const products = [
     description:
       "Pão fresco, salada e escolha entre recheio de Frango ou Salame.",
     price: 12.0,
-    image: "/produtos/lanche-natural.jpg",
+    image: "/produtos/lanche-natural.png",
     category: "porcoes",
   },
 

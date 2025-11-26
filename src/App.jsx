@@ -80,7 +80,6 @@ export default function App() {
 
   return (
     <div className="flex flex-col md:flex-row h-screen bg-brand-gray font-sans text-brand-black overflow-hidden">
-
       <ModalConfirmacao
         isOpen={isConfirmOpen}
         onClose={() => {
@@ -125,12 +124,12 @@ export default function App() {
 
           <section>
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-bold flex items-center gap-2 capitalize">
+              <h2 className="text-3xl font-lobster text-brand-black flex items-center gap-2 capitalize tracking-wide">
                 <Flame
                   className="text-brand-yellow fill-brand-yellow"
-                  size={20}
+                  size={24}
                 />
-                {activeTab === "home" ? "Cardápio Completo" : activeTab}
+                {activeTab === "home" ? "Cardápio da Casa" : activeTab}
               </h2>
             </div>
 

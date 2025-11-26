@@ -26,7 +26,7 @@ export function CardProduto({ product, onAdd, onClick }) {
       </div>
 
       <div className="flex-1 w-full flex flex-col">
-        <h3 className="font-bold text-brand-black text-base sm:text-lg leading-tight mb-1">
+        <h3 className="font-montserrat font-bold text-brand-black text-base sm:text-lg leading-tight mb-1">
           {product.name}
         </h3>
         <p className="text-gray-500 text-xs sm:text-sm line-clamp-2 mb-3 flex-1">
@@ -34,7 +34,7 @@ export function CardProduto({ product, onAdd, onClick }) {
         </p>
 
         <div className="flex items-center justify-between mt-auto">
-          <span className="font-bold text-lg text-brand-black">
+          <span className="font-montserrat font-bold text-lg text-brand-black">
             R$ {product.price.toFixed(2).replace(".", ",")}
           </span>
 
